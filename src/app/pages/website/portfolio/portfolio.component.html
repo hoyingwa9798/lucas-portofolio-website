@@ -1,0 +1,29 @@
+<div class="portfolio-container">
+    <div class="inner-container d-flex flex-column justify-content-start align-items-center">
+        <h1 style="color: #7f7466; font-size: 20px; text-transform: uppercase; margin-top: 5rem;">PORTFOLIO</h1>
+        <h1 style="color: white; font-size: 60px;">Latest Projects</h1>
+        <div class="vertical-box"></div>
+        <div class="tab-container d-flex flex-row justify-content-around align-items-center">
+            <div class="normal-tab" (click)="selectType('frontend')" [ngClass]="selectedPortfolioType == 'frontend' ? 'selected-tab' : 'tab'">
+                <span class="">Web & Mobile Applications</span>
+            </div>
+            <div class="normal-tab" (click)="selectType('backend')" [ngClass]="selectedPortfolioType == 'backend' ? 'selected-tab' : 'tab'">
+                <span>Backend & APIs</span>
+            </div>
+            <div class="normal-tab" (click)="selectType('data')" [ngClass]="selectedPortfolioType == 'data' ? 'selected-tab' : 'tab'">
+                Data dashboard & Analytics
+            </div>
+            <div class="normal-tab" (click)="selectType('cloud')" [ngClass]="selectedPortfolioType == 'cloud' ? 'selected-tab' : 'tab'">
+                Cloud
+            </div>
+        </div>
+
+        <div>
+            <app-front-portfolio *ngIf="selectedPortfolioType === 'frontend'"></app-front-portfolio>
+            <app-back-portfolio *ngIf="selectedPortfolioType === 'backend'"></app-back-portfolio>
+            <app-data-portfolio *ngIf="selectedPortfolioType === 'data'"></app-data-portfolio>
+            <app-cloud-portfolio *ngIf="selectedPortfolioType === 'cloud'"></app-cloud-portfolio>
+        </div>
+
+    </div>
+</div>

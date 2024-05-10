@@ -1,0 +1,59 @@
+<div>
+    <div class="portfolio-container d-flex flex-row justify-content-center align-items-center">
+        <div class="galleria-container right-animated">
+            <p-galleria [value]="bdaImages" [showIndicators]="true" [numVisible]="2" [showThumbnails]="false" [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'width': '100%', height: '100%' }">
+                <ng-template pTemplate="item" let-bdaImage>
+                    <div>
+                        <img [src]="bdaImage.previewImageSrc" style="width: 320px; height: 650px;" />
+                    </div>
+                </ng-template>
+            </p-galleria>
+        </div>
+        <div class="detail-container left-animated">
+            <p class="portfolio-type">Web & Mobile Applications</p>
+            <P class="portfolio-name">Wealth Management App</P>
+            <p class="portfolio-stack-detail">JavaScript / React Native / Redux / React Hooks / CSS / Java / Gradle / Node.js / Xcode / Android Studio / Firebase</p>
+            <p class="description">
+                <br>A mobile application for the banks named Delta Asia Bank Limited(BDA), which is a bank in Macau. Build with React Native. <br>
+                <br>The mobile app includes several functions, deposit, withdrawal, fixed deposit, fund transfer (allow different currency), Biometric Authentication, 2FA Auth, security pin, HKID capture, pdf download, document upload, phone notification, etc. <br>
+                <br>Supported three languages.<br></p>
+        </div>
+    </div>
+
+    <div class="portfolio-container d-flex flex-row-reverse justify-content-center align-items-center">
+        <div class="galleria-container right-animated">
+            <p-galleria [value]="agbaImages" [showIndicators]="true" [numVisible]="2" [showThumbnails]="false" [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'width': '100%', height: '100%' }">
+                <ng-template pTemplate="item" let-agbaImage>
+                    <div>
+                        <img [src]="agbaImage.previewImageSrc" style="width: 320px; height: 650px;" />
+                    </div>
+                </ng-template>
+            </p-galleria>
+        </div>
+        <div class="detail-container left-animated">
+            <p class="portfolio-type">Web & Mobile Applications</p>
+            <P class="portfolio-name">Financial App</P>
+            <p class="portfolio-stack-detail">TypeScript / React Native / Redux / React Hooks / CSS / Java / Gradle / Node.js / npm / Xcode / Android Studio / Firebase</p>
+            <p class="description">
+                <br>A mobile application for the financial named AGBA Group Holding Ltd, under Convoy Global Holdings Limited. Build with React Native. <br>
+                <br>The mobile app includes several functions, deposit, withdrawal, Biometric Authentication, 2FA Auth, security pin, HKID capture, pdf download, document upload, etc. Supported three languages.<br>
+            </p>
+        </div>
+    </div>
+
+    <div class="portfolio-container d-flex flex-row justify-content-start align-items-center">
+        <div class="galleria-container right-animated">
+            
+            <img src="assets/portfolio.png" style="width: 360px; height: 215px;" />
+            
+        </div>
+        <div class="detail-container left-animated">
+            <p class="portfolio-type">Web & Mobile Applications</p>
+            <P class="portfolio-name">Personal Portfolio Website</P>
+            <p class="portfolio-stack-detail">Angular / SCSS / Bootstrap / npm / UI/UX Design / TypeScript</p>
+            <p class="description">
+                <br>I'm excited for you to explore my portfolio website, which was a personal web project I took on from start to finish. <br>
+                <br>I handled everything from the UI/UX design and development to the deployment process. Please take your time reviewing it in detail - I'd appreciate any feedback you may have as I'm always looking to enhance my skills.<br></p>
+        </div>
+    </div>
+</div>

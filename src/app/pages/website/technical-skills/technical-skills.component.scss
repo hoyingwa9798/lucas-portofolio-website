@@ -1,0 +1,117 @@
+.technical-skills-container {
+    background-color: #000000;
+    color: #dac5a7;
+    width: 100%;
+    height: 1000px;
+}
+
+.vertical-box{
+    width: 6px;
+    height: 100px;
+    background-color: #dac5a7;
+    border-radius: 5px;
+}
+
+.carousel-container{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+::ng-deep .p-carousel-indicators .p-carousel-indicator button {
+    /* ::ng-deep is used to penetrate the Shadow DOM and target the internal styles of the PrimeNG Carousel component. */
+    /*.p-carousel-indicators .p-carousel-indicator button targets the buttons representing the navigation dots.*/
+    /*.p-carousel-indicator.p-highlight button targets the button representing the active navigation dot.*/
+    width: 15px; /* Adjust the width of the dots */
+    height: 15px; /* Adjust the height of the dots */
+    border-radius: 50%; /* Make the dots circular */
+    background-color: #ccc; /* Set the background color for inactive dots */
+  }
+  
+  /* Style for the active navigation dot */
+::ng-deep .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background-color: #dac5a7; /* Set the background color for the active dot */
+}
+
+
+:host ::ng-deep {
+    .skill-item {
+        .skill-item-content {
+            .horizontal-box{
+                width: 70px;
+                height: 6px;
+                background-color: #dac5a7;
+                border-radius: 5px;
+                transition: background-color 0.5s ease;
+            }
+            .skill-id{
+                font-weight: bold;
+                font-size: 3rem;
+                color: rgba(255, 255, 255, 0.2);
+                transition: color 0.5s ease;
+            }
+            .skill-name{
+                height: 100px;
+                font-weight: 600;
+                font-size: 1.5rem;
+                color: white;
+                margin-bottom: 10px;
+            }
+            .skill-description{
+                height: 200px;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border: 1px solid var(--surface-d);
+            border-color: #dac5a7;
+            margin: 1.3rem;
+            text-align: start;
+            padding: 2rem;
+            height: 450px;
+            border-radius: 2rem;
+            color: #dac5a7;
+            font-size: 1rem;
+            letter-spacing: .15rem;
+            transition: all .5s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #22211e;
+                border-radius: 5px;
+                z-index: -2;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 0px;
+                width: 100%;
+                background-color: #dac5a7;
+                transition: all .5s;
+                border-radius: 5px;
+                z-index: -1;
+            }
+            &:hover {
+                color: black;
+                .horizontal-box {
+                    background-color: black;
+                }
+                .skill-name {
+                    color: black;
+                }
+                &:before {
+                height: 100%;
+                }
+            }
+        }
+    }
+}

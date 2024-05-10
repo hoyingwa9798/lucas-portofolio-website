@@ -1,0 +1,36 @@
+<div>
+    <div class="portfolio-container d-flex flex-row justify-content-center align-items-center">
+        <div class="galleria-container right-animated">
+            <p-galleria [value]="dataImages" [showIndicators]="true" [numVisible]="2" [showThumbnails]="false" [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'width': '100%', height: '100%' }">
+                <ng-template pTemplate="item" let-dataImages>
+                    <div>
+                        <img [src]="dataImages.previewImageSrc" style="width: 580px; height: 450px;" />
+                    </div>
+                </ng-template>
+            </p-galleria>
+        </div>
+        <div class="detail-container left-animated">
+            <p class="portfolio-type">Data dashboard & Analytics</p>
+            <P class="portfolio-name">Stack Overflow Developer 2022 Survey Visualization & Analytics</P>
+            <p class="portfolio-stack-detail">IBM Cognos Analytics / Data Visualization / Data Analytics</p>
+            <p class="description">
+                Analyze the data from the Stack Overflow Developer 2022 survey to determine the top technical skills and the most desired technical stack in the coming year.
+            </p>
+        </div>
+    </div>
+
+    <div class="portfolio-container d-flex flex-row-reverse justify-content-center align-items-center">
+        <div class="galleria-container right-animated">
+            <img src="assets/linkedIn-job-postings.png" style="width: 600px; height: 400px;" />       
+        </div>
+        <div class="detail-container left-animated">
+            <p class="portfolio-type">Data dashboard & Analytics</p>
+            <P class="portfolio-name">Kaggle LinkedIn Job Postings data Visualization & Analytics</P>
+            <p class="portfolio-stack-detail">Tableau / Data Visualization / Data Analytics</p>
+            <a href="https://public.tableau.com/app/profile/lucas.ho8152/viz/LinkedInJobPostingsAnalysis-2023/LinkedInJobPostings" target="_blank" style="color: #dac5a7;">Link</a>
+            <p class="description">
+                Examine the LinkedIn Job Postings dataset from Kaggle to identify the leading job titles and the most sought-after positions, as well as prevalent industry sectors among companies.
+            </p>
+        </div>
+    </div>
+</div>

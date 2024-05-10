@@ -1,0 +1,49 @@
+::ng-deep .p-galleria-indicators .p-galleria-indicator button {
+    /* ::ng-deep is used to penetrate the Shadow DOM and target the internal styles of the PrimeNG Carousel component. */
+    /*.p-carousel-indicators .p-carousel-indicator button targets the buttons representing the navigation dots.*/
+    /*.p-carousel-indicator.p-highlight button targets the button representing the active navigation dot.*/
+    width: 15px; /* Adjust the width of the dots */
+    height: 15px; /* Adjust the height of the dots */
+    border-radius: 50%; /* Make the dots circular */
+    background-color: #ccc; /* Set the background color for inactive dots */
+  }
+  
+  /* Style for the active navigation dot */
+::ng-deep .p-galleria-indicators .p-galleria-indicator.p-highlight button {
+    background-color: #dac5a7; /* Set the background color for the active dot */
+}
+
+.galleria-container{
+    width: 640px;
+    height: 640px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-container{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 10rem;
+    align-items: center;
+    .detail-container{
+        height: 100%;
+        width: 560px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .portfolio-type{
+            color: #dac5a7;
+        }
+        .portfolio-name{
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .description{
+            color: #7f7466;
+        }
+    }
+}

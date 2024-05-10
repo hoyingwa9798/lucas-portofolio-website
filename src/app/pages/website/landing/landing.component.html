@@ -1,0 +1,75 @@
+<link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+rel='stylesheet' type='text/css'>
+
+<nav class="navbar navbar-expand-lg navbar-light d-flex flex-row justify-content-around top-bar">
+    <div id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active hover-underline-animation">
+          <a class="nav-link nav-item-text" href="#" (click)="scrollToAboutMe()">About me</a>
+        </li>
+        <li class="nav-item active hover-underline-animation">
+          <a class="nav-link nav-item-text" href="#" (click)="scrollToTechnicalSkills()">Services</a>
+        </li>
+      </ul>
+    </div>
+    <img class="brand-img" src="assets/brand-2.png" alt="">
+    <div class="" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active hover-underline-animation">
+            <a class="nav-link nav-item-text" href="#" (click)="scrollToPortfolio()">Portofolio</a>
+          </li>
+          <li class="nav-item active hover-underline-animation">
+            <a class="nav-link nav-item-text" href="#" (click)="scrollToAboutMe()">Contact</a>
+          </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="self-intro-container d-flex flex-row justify-content-around">
+    <div class="hello-box right-animated" style="margin-top: 10%;">
+        <h1 style="font-size: 100px; color: white; font-weight: bold; display: inline;">Hello</h1>
+        <h1 style="display: inline; font-size: 100px; color: #dac5a7; font-weight: bold;">.</h1>
+        <div class="d-flex flex-row justify-content-start">
+            <div class="line-box rounded" style="margin-right: 1rem;"></div>
+            <h1 style="color: #dac5a7;">I am Lucas Ho</h1>
+        </div>
+        <h1 class="text-white">Professional Software Developer</h1>
+        <a class="download-button download-button-1 d-flex flex-row justify-content-center align-items-center btn-animated"  href="https://www.dropbox.com/scl/fi/h3mo7bmt9n0d2h2fto7i8/Ying-Wa-Ho-Resume.pdf?rlkey=wrn12axcocq6nxfwpzhhe21cw&st=ik8bne05&dl=0" target="_blank">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%" rx="10"/>
+            </svg>
+            <img src="assets/download-black.png" class="download-black-img" alt="" style="width: 20px; height: 20px;">
+            <img src="assets/download-light.png" class="download-light-img" alt="" style="width: 20px; height: 20px;">
+            <h1 class="download-text" style="margin-left: 10px; margin-bottom: 0;">Download CV</h1>
+        </a>
+    </div>
+    <div class="me-background-box">
+        <img class="me-img btn-animated" src="assets/me.png" alt="">
+    </div>
+    <div class="self-intro-box left-animated" style="margin-top: 10%;">
+        <h1 class="text-justify text-right" style="font-size: 25px; color: #7f7466; margin-bottom: 50px;">
+            I am a Full-Stack Software Developer. 
+            Demonstrates expertise in designing, developing, and deploying diverse software, specializing in Mobile Applications, Database Management Systems, E-commerce Platforms, API Integrations, and Cloud-Based Solutions
+        </h1>
+        
+        <div class="social-img-container  d-flex flex-row justify-content-around">
+          <a href="https://github.com/hoyingwa9798?tab=repositories" target="_blank"><img class="social-img" src="assets/github-grey.png"></a>
+          <a href="https://www.linkedin.com/in/lucas-ho-308792131/"  target="_blank"><img class="social-img" src="assets/linkedin-grey.png"></a>
+        </div>
+    </div>
+</div>
+
+<app-about-me></app-about-me>
+<app-experience></app-experience>
+<app-technical-skills></app-technical-skills>
+<app-portfolio></app-portfolio>
+
+<div class="rooter-container d-flex flex-row justify-content-around align-items-center">
+    <p>
+      Copyright 2024 All Right Reserved
+    </p>
+    <div class="social-img-container  d-flex flex-row justify-content-around">
+      <a href="https://github.com/hoyingwa9798?tab=repositories" target="_blank"><img class="social-img" src="assets/github-black.png"></a>
+      <a href="https://www.linkedin.com/in/lucas-ho-308792131/" target="_blank"><img class="social-img" src="assets/linkedin-black.png"></a>
+    </div>
+</div>

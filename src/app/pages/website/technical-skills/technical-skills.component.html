@@ -1,0 +1,19 @@
+<div class="technical-skills-container  d-flex flex-column justify-content-start align-items-center">
+    <h1 style="color: #7f7466; font-size: 20px; text-transform: uppercase;">my technical skills</h1>
+    <h1 style="color: white; font-size: 60px;">What Is My Skills?</h1>
+    <div class="vertical-box"></div>
+    <div class="carousel-container">
+        <p-carousel [value]="skills" [numVisible]="4" [numScroll]="1" [circular]="true">
+            <ng-template let-skill pTemplate="item">
+                <div class="skill-item">
+                    <div class="skill-item-content">
+                        <div class="skill-id">0{{skill.id}}.</div>
+                        <div class="skill-name">{{skill.category}}</div>
+                        <div class="skill-description">{{skill.skillName}}</div>
+                        <div class="horizontal-box"></div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>
